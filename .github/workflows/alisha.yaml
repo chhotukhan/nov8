@@ -1,0 +1,17 @@
+name: myworkflow1
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  myjob1:
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        run: |
+          whoami
+          cd
+          pwd
+          cat /etc/os-release
+          ls -al
+          docker --version
+          docker compose version
